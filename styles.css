@@ -1,0 +1,233 @@
+/* styles.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 77%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 30vmin;
+  height: 35vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  box-shadow: 0 7px 6px 0 rgba(0,0,0,0.8) ;
+}
+
+
+/* Add CSS for fade-in effect */
+#mainPage {
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 2s; /* Apply transition effect over 2 seconds */
+}
+
+.fadeIn {
+  opacity: 1 !important; /* Override opacity to 1 */
+}
+
+
+@font-face {
+  font-family: myfont;
+  src: url(wcp.woff) format('woff');
+}
+
+
+body {
+  font-family: myfont;
+
+}
+
+#passwordForm {
+  text-align: center;
+  margin-top: 700px; /* Adjusted margin-top */
+  margin-left: auto; /* Center the form horizontally */
+  margin-right: auto; /* Center the form horizontally */
+  width: 100%; /* Adjusted width */
+  max-width: 1200px; /* Set maximum width to prevent excessive stretching */
+  height: 1200px; /* Adjusted height */
+  font-size: 32px; /* Adjusted font size */
+}
+
+#content {
+  text-align: center;
+  margin-bottom: 10  px;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+#fcontent {
+  text-align: center;
+  margin-bottom: 10  px;
+  margin-top: 600px;
+  margin-left: 150px;
+  margin-right: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+#h1 {
+  font-size: 80px;
+}
+
+#text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.button-container {
+  position: relative; /* Ensure the buttons are positioned relative to this container */
+}
+
+#Next {
+  margin: 100;
+  padding: 10px 20px;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #febc10;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border-radius: 6px;
+  box-shadow: 0 4px 2px 0 rgba(0,0,0,0.9);
+  font-family: myfont; /* Use a retro font */
+  src: url(wcp.woff) format('woff'); 
+  z-index: 2;
+}
+
+#Next:hover {
+  background-color: #34a5d1;
+}
+
+.button {
+  margin: 10px;
+  padding: 20px 40px;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border-radius: 6px;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.9);
+  font-family: myfont; /* Use a retro font */
+  src: url(wcp.woff) format('woff'); 
+  z-index: 2;
+}
+
+
+
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.yes-btn {
+  background-color: #2985d7;
+}
+
+.no-btn {
+  background-color: #df307b;
+}
+
+
+.animation{
+  width: 100%;
+  height: 300vh;
+  position: absolute;
+  background: url(background.jpg);
+  background-size: cover;
+  animation: infinite 120s linear infinite;
+
+}
+
+@keyframes infinite{
+  0%{
+    background-position: 50% 0;
+  }
+  100%{
+    background-position: 50% -1000px;
+  }
+
+}
+
+
+
+#FlowersContainer {
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  z-index: 5
+}
+
+#FlowersContainer img {
+  max-width: 100%; /* Ensure the image does not exceed the container's width */
+  max-height: 100%; /* Ensure the image does not exceed the container's height */
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 1s; /* Apply transition effect over 1 second */
+
+  z-index: 6
+}
+
+#FlowersContainer.fade-in img {
+  opacity: 1; /* Set opacity to 1 to make the image visible */
+}
+
+#hintButton {
+  position: fixed; /* Position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 20px; /* Distance from the left of the viewport */
+  font-family: myfont;
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: #999; /* Faint text color */
+  font-size: 32px; /* Adjust font size as needed */
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin-left: 5px; /* Add some margin to separate from the password input */
+}
+
+#hintButton:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.submit-button {
+  position: center;
+  bottom: 20px;
+  left: 20px;
+  font-family: myfont;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.submit-button:hover {
+  text-decoration: underline;
+}

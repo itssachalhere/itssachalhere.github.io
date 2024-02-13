@@ -1,0 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bg {
+    background-image: url('No.jpg'); /* Specify the URL of your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to fill the viewport */
+}

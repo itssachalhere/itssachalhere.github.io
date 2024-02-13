@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="heart.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Big Question</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add CSS for fade-in effect */
+    #mainPage {
+      opacity: 0; /* Start with opacity 0 */
+      transition: opacity 5s; /* Apply transition effect over 2 seconds */
+    }
+  </style>
+  <script src="audio.js" defer></script> <!-- Include the audio.js file -->
+
+
+</head>
+<body>
+
+
+  
+<div class="animation"></div>
+
+
+
+<div class="container">
+  <div id="content">
+    <h1 id="h1"></h1>
+    <p id="text"></p>
+    <button class="button yes-btn" id="yesBtn">Yes &lt;3</button>
+    <button class="button no-btn" id="noBtn">No &lt;/3</button>
+  </div>
+</div>
+
+
+<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+  <img class="image" src="1.jpg" draggable="false" />
+  <img class="image" src="2.jpg" draggable="false" />
+  <img class="image" src="3.jpg" draggable="false" />
+  <img class="image" src="4.jpg" draggable="false" />
+  <img class="image" src="5.jpg" draggable="false" />
+  <img class="image" src="6.jpg" draggable="false" />
+  <img class="image" src="7.jpg" draggable="false" />
+  <img class="image" src="8.jpg" draggable="false" />
+</div>
+
+
+<script src="script.js"></script>
+
+<audio id="bgMusic">
+  <source src="selfless.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+</body>
+</html>
